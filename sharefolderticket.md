@@ -51,6 +51,18 @@ The employee requires access to organize onboarding documents.
 
 "You need permission to perform this action."
 
+
+### Screenshot: Shared Drive Permission Error
+
+The employee attempted to create a new folder on the Shared (S:) network drive but received the following Windows error:
+
+"You need permission to perform this action."
+
+The screenshot below documents the permission error encountered during the incident.
+
+![Shared Drive Permission Error](../Screenshots/Ticket-001-Permission-Error.png)
+
+
 ### Business Impact
 
 The employee is unable to create folders needed to organize HR onboarding documentation.
