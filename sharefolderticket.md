@@ -210,7 +210,7 @@ The appropriate access scope must be confirmed before modifying permissions.
 
 **Screenshot:**
 
-[Share Permissions Internal Note](screenshots/Ticket-001-Share-Permissions.png)
+[Share Permissions](screenshots/Ticket-001-Share-Permissions.png)
 
 ---
 
@@ -290,7 +290,7 @@ Once the issue has been resolved:
 
 **Screenshot:**
 
-[Share Permission](screenshots/Ticket-001-Internal-Note.png)
+[Share Permission Internal Note](screenshots/Ticket-001-Internal-Note.png)
 
 ---
 
