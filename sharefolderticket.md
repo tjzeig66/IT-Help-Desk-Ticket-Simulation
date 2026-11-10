@@ -290,7 +290,7 @@ Once the issue has been resolved:
 
 **Screenshot:**
 
-[Share Permission](screenshots/Ticket-001-internal-Note.png)
+[Share Permission](screenshots/Ticket-001-Internal-Note.png)
 
 ---
 
