@@ -129,15 +129,12 @@ Confirmed the local folder path:
 `C:\SHARED`
 
 ### Findings
-[Shared Folder Location](screenshots/File-Share-Located.png)
 
 The shared folder was configured on Windows Server 2022, and its physical location was identified.
 
-**Screenshots:**
+**Screenshot:**
 
-[Initial File Explorer Investigation](screenshots/Ticket-001-File-Explorer.png)
-
-[Shared Folder Location](screenshots/Ticket-001-Share-Location.png)
+[Shared Folder Location](screenshots/File-Shared-Located.png)
 
 ---
 
