@@ -60,7 +60,7 @@ The employee attempted to create a new folder on the Shared (S:) network drive b
 
 The screenshot below documents the permission error encountered during the incident.
 
-![Shared Drive Permission Error](../Screenshots/Ticket-001-Permission-Error.png)
+![Shared Drive Permission Error](Screenshots/Ticket-001-Permission-Error.png)
 
 
 ### Business Impact
