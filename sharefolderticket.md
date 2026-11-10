@@ -134,7 +134,7 @@ The shared folder was configured on Windows Server 2022, and its physical locati
 
 **Screenshots:**
 
-![Initial File Explorer Investigation](../Screenshots/Ticket-001-File-Explorer.png)
+[Initial File Explorer Investigation](screenshots/Ticket-001-File-Explorer.png)
 
 [Shared Folder Location](screenshots/Ticket-001-Share-Location.png)
 
