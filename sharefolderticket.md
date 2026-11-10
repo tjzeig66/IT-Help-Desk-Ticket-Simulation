@@ -134,7 +134,7 @@ The shared folder was configured on Windows Server 2022, and its physical locati
 
 **Screenshot:**
 
-[Shared Folder Location](screenshots/File-Shared-Located.png)
+[Shared Folder Location](screenshots/File-Share-Located.png)
 
 ---
 
