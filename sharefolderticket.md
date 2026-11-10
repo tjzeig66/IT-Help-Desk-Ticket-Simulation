@@ -60,7 +60,7 @@ The employee attempted to create a new folder on the Shared (S:) network drive b
 
 The screenshot below documents the permission error encountered during the incident.
 
-[Shared Drive Permission Error](Screenshots/Ticket-001-Permission-Error.png)
+[Shared Drive Permission Error](screenshots/Ticket-001-Permission-Error.png)
 
 
 ### Business Impact
@@ -104,7 +104,7 @@ HR Specialist
 
 **Screenshot:**
 
-![Jira Incident Ticket](../Screenshots/Ticket-001-Jira-Incident.png)
+[Jira Incident Ticket](screenshots/Ticket-001-Jira-Incident.png)
 
 ---
 
@@ -136,7 +136,7 @@ The shared folder was configured on Windows Server 2022, and its physical locati
 
 ![Initial File Explorer Investigation](../Screenshots/Ticket-001-File-Explorer.png)
 
-![Shared Folder Location](../Screenshots/Ticket-001-Share-Location.png)
+[Shared Folder Location](screenshots/Ticket-001-Share-Location.png)
 
 ---
 
@@ -179,7 +179,7 @@ Additional permissions and group memberships still needed to be considered befor
 
 **Screenshot:**
 
-![NTFS Permissions](../Screenshots/Ticket-001-NTFS-Permissions.png)
+[NTFS Permissions](screenshots/Ticket-001-NTFS-Permissions.png)
 
 ---
 
@@ -212,7 +212,7 @@ The appropriate access scope must be confirmed before modifying permissions.
 
 **Screenshot:**
 
-![Share Permissions](../Screenshots/Ticket-001-Share-Permissions.png)
+[Share Permissions](screenshots/Ticket-001-Share-Permissions.png)
 
 ---
 
