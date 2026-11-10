@@ -290,7 +290,7 @@ Once the issue has been resolved:
 
 **Screenshot:**
 
-_Add screenshot of the resolved Jira incident._
+[Share Permission](screenshots/Ticket-001-internal-Note.png)
 
 ---
 
