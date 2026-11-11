@@ -215,7 +215,7 @@ The appropriate access scope must be confirmed before modifying permissions.
 ---
 
 
-### Additional Troubleshooting: Advanced NTFS Permissions
+## 7.  Additional Troubleshooting: Advanced NTFS Permissions
 
 Further investigation was performed to determine whether the affected employee had sufficient NTFS permissions to create folders.
 
