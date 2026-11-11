@@ -214,6 +214,113 @@ The appropriate access scope must be confirmed before modifying permissions.
 
 ---
 
+
+### Additional Troubleshooting: Advanced NTFS Permissions
+
+Further investigation was performed to determine whether the affected employee had sufficient NTFS permissions to create folders.
+
+Opened:
+
+`C:\SHARED → Properties → Security → Advanced`
+
+#### Advanced Permission Entries
+
+Three separate permission entries were identified for `TJZEIG\Users`.
+
+| Entry | Type | Applies To | Inherited From |
+|---|---|---|---|
+| 1 | Allow | This folder, subfolders, and files | None |
+| 2 | Allow | This folder and subfolders | None |
+| 3 | Allow | Subfolders only | None |
+
+The entries applied to different folder scopes and required further investigation to determine the employee's effective permissions.
+
+### Effective Access Verification
+
+To verify Mickey Mouse's effective NTFS permissions:
+
+1. Opened Advanced Security Settings for `C:\SHARED`.
+2. Selected the **Effective Access** tab.
+3. Clicked **Select a user**.
+4. Entered `Mickey`.
+5. Clicked **Check Names**.
+6. Selected the recognized domain account.
+7. Clicked **View effective access**.
+8. Reviewed the calculated permissions.
+
+#### Findings
+
+The **Create folders / append data** permission was checked for Mickey.
+
+This indicated that the employee had the necessary NTFS permission to create folders directly within `C:\SHARED`.
+
+However, the employee continued receiving a permission error when attempting to create folders through the mapped network drive.
+
+This suggested that the issue was related to SMB share permissions rather than the employee's effective NTFS permissions.
+
+---
+
+### Additional Troubleshooting: SMB Share Permission Restriction
+
+Further inspection confirmed that `TJZEIG\Domain Users` had only **Read** permission on the `SHARED` network share.
+
+Because SMB share permissions and NTFS permissions are both evaluated during network access, the read-only share permission restricted folder creation despite the employee's NTFS permissions.
+
+#### Identified Root Cause
+
+The affected employee had sufficient NTFS permissions to create folders, but the applicable SMB share permissions did not provide write access.
+
+---
+
+### Permission Change: Granting Mickey SMB Change Access
+
+To address the identified restriction, a targeted permission change was configured for the affected employee.
+
+On Windows Server 2022:
+
+1. Opened **Server Manager**.
+2. Navigated to **File and Storage Services → Shares**.
+3. Located the `SHARED` network share.
+4. Opened **Properties**.
+5. Selected **Permissions**.
+6. Clicked **Customize permissions**.
+7. Selected the **Share** tab.
+8. Clicked **Add**.
+9. Selected the account principal field.
+10. Entered `Mickey`.
+11. Clicked **Check Names**.
+12. Confirmed the domain account.
+13. Granted Mickey **Change** permission.
+14. Applied the configuration changes.
+
+#### Updated Share Permissions
+
+| Account or Group | Share Permission |
+|---|---|
+| TJZEIG\Domain Users | Read |
+| TJZEIG\Mickey | Change |
+| Other existing principals | Unchanged |
+
+The existing Domain Users permission was preserved to avoid granting unnecessary write access to all domain users.
+
+No additional NTFS permission changes were required based on the Effective Access findings.
+
+#### Verification Required
+
+The following verification steps must be completed before resolving the incident:
+
+1. Sign in to Windows 11 as `TJZEIG\Mickey`.
+2. Open File Explorer.
+3. Navigate to `SHARED (S:)`.
+4. Right-click an empty area.
+5. Select **New → Folder**.
+6. Name the folder `Permission-Test`.
+7. Confirm that the folder is created successfully.
+8. Verify that unrelated users have not received unnecessary write access.
+
+**Status:** Permission change configured; final verification pending.
+
+
 ## 7. Access Control Considerations
 
 The affected employee belongs to the Human Resources department.
