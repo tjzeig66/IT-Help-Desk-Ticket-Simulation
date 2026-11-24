@@ -315,7 +315,7 @@ After successful verification:
 
 **Screenshot:**
 
-![Jira Internal Note](screenshots/Ticket-002-Internal-Note.png)
+![Jira Internal Note](screenshots/password reset first internal note.png)
 
 **Screenshot:**
 
