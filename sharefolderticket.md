@@ -396,7 +396,9 @@ Once the issue has been resolved:
 - Change the Jira ticket status to Resolved.
 
 **Screenshot:**
+![Share Permission Reply](screenshots/Ticket-001-Shared-File-Reply.png)
 
+**Screenshots:**
 ![Share Permission Internal Note](screenshots/Ticket-001-Internal-Note.png)
 
 ---
