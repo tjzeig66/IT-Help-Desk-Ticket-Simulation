@@ -265,33 +265,6 @@ After completing the password reset:
 10. Complete the sign-in process.
 11. Verify that the Windows desktop loads successfully.
 
-### Verification Results
-
-| Test | Result |
-|---|---|
-| Active Directory account located | Pending |
-| Password reset completed | Pending |
-| Temporary password accepted | Pending |
-| Password change required | Pending |
-| New password accepted | Pending |
-| Successful domain authentication | Pending |
-| Windows desktop accessible | Pending |
-
-### Additional Verification
-
-Open Command Prompt on Windows 11 and execute:
-
-```cmd
-whoami
-```
-
-### Expected Output
-
-```text
-tjzeig\mickey
-```
-
-This confirms that the employee is signed in using the correct domain account.
 
 **Screenshot:**
 
