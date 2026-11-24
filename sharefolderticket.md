@@ -379,7 +379,7 @@ After implementing the approved permission changes:
 
 **Screenshot:**
 
-_Add screenshot showing successful folder creation._
+[Share Permission Final Outcome](screenshots/Ticket-001-Final-Outcome.png)
 
 ---
 
