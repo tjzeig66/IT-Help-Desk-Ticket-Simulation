@@ -292,14 +292,15 @@ Final verification will confirm that the employee can authenticate successfully 
 
 Hi Mickey,
 
-Your domain account password has been reset.
+Your domain account password has been successfully reset, and we have verified that you can sign in to your Windows workstation using your updated credentials.
 
-Please sign in to your workstation using the temporary credentials provided through the approved secure channel. You will be prompted to create a new password during the sign-in process.
-
-Please let IT know if you experience any additional issues accessing your workstation.
+Please contact IT Support if you experience any additional login issues.
 
 Thanks,  
 IT Support
+
+**Screenshot:**
+![Ticket-002-Jira Response](screenshots/Ticket-002-Reply-to-Customer.png)
 
 ### Ticket Closure
 
