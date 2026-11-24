@@ -35,7 +35,7 @@ Ticketing System:
 - Resolved the permission issue and verified successful folder creation
 - Documented the troubleshooting process and incident resolution
 
-[View Documentation](Ticket-001-Shared-Drive-Permissions.md)
+[View Documentation](sharedfolderticket.md)
 
 ---
 
@@ -45,7 +45,7 @@ Ticketing System:
 - Practiced **Active Directory password reset procedures**
 - Documented troubleshooting and authentication verification procedures
 
-[View Documentation](Ticket-002-Password-Reset.md)
+[View Documentation](ActiveDirectoryPasswordReset.md)
 
 ---
 
